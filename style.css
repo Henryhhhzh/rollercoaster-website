@@ -635,7 +635,7 @@ tbody tr:last-child td {
 .diagram svg {
   display: block;
   width: 100%;
-  min-width: 36rem;
+  min-width: 42rem;
   height: auto;
 }
 
@@ -1012,4 +1012,22 @@ tbody tr:last-child td {
   .nav-list {
     margin-inline: -0.75rem;
   }
+}
+
+.svg-flight {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 2.5;
+  stroke-dasharray: 5 6;
+  stroke-linecap: round;
+}
+
+.svg-disc {
+  fill: var(--color-surface);
+  stroke: var(--color-ink);
+  stroke-width: 5;
+}
+
+.svg-hole {
+  fill: var(--color-ink);
 }

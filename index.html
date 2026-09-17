@@ -289,27 +289,39 @@
 
         <div class="energy-map">
           <h3>Energy map</h3>
-          <p class="energy-map-intro">Six points along the track, and what the marble's energy is doing at each one.</p>
+          <p class="energy-map-intro">Nine points along the track, and what the marble's energy is doing at each one.</p>
           <figure class="diagram">
-            <svg viewBox="0 0 800 360" role="img" aria-labelledby="diagram-title diagram-desc">
-              <title id="diagram-title">Side view of The Long Drop with six labelled points</title>
-              <desc id="diagram-desc">The track starts high on the left at point A, drops down a long runway through point B to the bottom at point C, goes round a loop whose top is point D, exits at point E and ends at point F. The top of the loop sits below the starting height.</desc>
-              <rect class="svg-base" x="20" y="318" width="760" height="12" rx="3"/>
-              <line class="svg-support" x1="66" y1="64" x2="66" y2="318"/>
-              <line class="svg-support" x1="104" y1="64" x2="104" y2="318"/>
-              <line class="svg-guide" x1="110" y1="60" x2="780" y2="60"/>
-              <text class="svg-label" x="780" y="50" text-anchor="end">Starting height</text>
-              <line class="svg-dimension" x1="36" y1="60" x2="36" y2="300"/>
-              <text class="svg-label svg-label-strong" x="30" y="185" text-anchor="end">h</text>
-              <path class="svg-track" d="M60 60 L110 60 C220 70 320 300 420 300 L760 300"/>
-              <circle class="svg-track" cx="520" cy="220" r="80"/>
-              <line class="svg-track" x1="760" y1="284" x2="760" y2="300"/>
-              <g class="svg-marker"><circle cx="90" cy="60" r="15"/><text x="90" y="60">A</text></g>
-              <g class="svg-marker"><circle cx="269" cy="184" r="15"/><text x="269" y="184">B</text></g>
-              <g class="svg-marker"><circle cx="450" cy="300" r="15"/><text x="450" y="300">C</text></g>
-              <g class="svg-marker"><circle cx="520" cy="140" r="15"/><text x="520" y="140">D</text></g>
-              <g class="svg-marker"><circle cx="610" cy="300" r="15"/><text x="610" y="300">E</text></g>
-              <g class="svg-marker"><circle cx="740" cy="300" r="15"/><text x="740" y="300">F</text></g>
+            <svg viewBox="0 0 900 400" role="img" aria-labelledby="diagram-title diagram-desc">
+              <title id="diagram-title">Side view of The Long Drop with nine labelled points</title>
+              <desc id="diagram-desc">The marble starts at the top of a tall tower at point A, falls down the big drop through point B to point C, goes round the loop whose top is point D, rolls down a shallow path at point E, drops steeply to point F, is kicked upwards at point G into a disc at point H, spirals in to the hole in the middle of the disc, and follows a short path to the finish at point I. The top of the loop sits below the starting height.</desc>
+              <rect class="svg-base" x="20" y="368" width="860" height="12" rx="3"/>
+              <line class="svg-support" x1="62" y1="54" x2="62" y2="368"/>
+              <line class="svg-support" x1="290" y1="254" x2="290" y2="368"/>
+              <line class="svg-support" x1="430" y1="266" x2="430" y2="368"/>
+              <line class="svg-support" x1="700" y1="312" x2="700" y2="368"/>
+              <line class="svg-support" x1="780" y1="312" x2="780" y2="368"/>
+              <line class="svg-guide" x1="80" y1="50" x2="880" y2="50"/>
+              <text class="svg-label" x="880" y="40" text-anchor="end">Starting height</text>
+              <line class="svg-dimension" x1="32" y1="50" x2="32" y2="345"/>
+              <text class="svg-label svg-label-strong" x="26" y="205" text-anchor="end">h</text>
+              <path class="svg-track" d="M40 50 L80 50 C150 55 170 250 230 250 L340 250 L520 275 C545 278 565 335 590 335 C615 335 630 322 645 300"/>
+              <circle class="svg-track" cx="290" cy="200" r="50"/>
+              <path class="svg-flight" d="M645 300 Q668 268 695 302"/>
+              <ellipse class="svg-disc" cx="740" cy="305" rx="55" ry="14"/>
+              <path class="svg-flight" d="M705 305 A35 9 0 0 1 775 305 A25 7 0 0 1 725 305 A12 4 0 0 1 749 305"/>
+              <ellipse class="svg-hole" cx="740" cy="305" rx="7" ry="3"/>
+              <line class="svg-flight" x1="740" y1="310" x2="740" y2="336"/>
+              <path class="svg-track" d="M728 340 L860 345"/>
+              <line class="svg-track" x1="860" y1="331" x2="860" y2="345"/>
+              <g class="svg-marker"><circle cx="60" cy="50" r="15"/><text x="60" y="50">A</text></g>
+              <g class="svg-marker"><circle cx="159" cy="152" r="15"/><text x="159" y="152">B</text></g>
+              <g class="svg-marker"><circle cx="220" cy="250" r="15"/><text x="220" y="250">C</text></g>
+              <g class="svg-marker"><circle cx="290" cy="150" r="15"/><text x="290" y="150">D</text></g>
+              <g class="svg-marker"><circle cx="430" cy="262" r="15"/><text x="430" y="262">E</text></g>
+              <g class="svg-marker"><circle cx="590" cy="335" r="15"/><text x="590" y="335">F</text></g>
+              <g class="svg-marker"><circle cx="645" cy="300" r="15"/><text x="645" y="300">G</text></g>
+              <g class="svg-marker"><circle cx="792" cy="302" r="15"/><text x="792" y="302">H</text></g>
+              <g class="svg-marker"><circle cx="840" cy="344" r="15"/><text x="840" y="344">I</text></g>
             </svg>
           </figure>
 
