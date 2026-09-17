@@ -289,7 +289,7 @@
 
         <div class="energy-map">
           <h3>Energy map</h3>
-          <p class="energy-map-intro">Nine points along the track, and what the marble's energy is doing at each one.</p>
+          <p class="energy-map-intro">Nine points along the track, what the marble's energy is doing at each one, and how fast it was going.</p>
           <figure class="diagram">
             <svg viewBox="0 0 900 400" role="img" aria-labelledby="diagram-title diagram-desc">
               <title id="diagram-title">Side view of The Long Drop with nine labelled points</title>
@@ -332,11 +332,9 @@
                 <h4>Start</h4>
               </div>
               <p>The marble sits still at the top of the tower. All of its energy is GPE.</p>
-              <div class="bars" role="img" aria-label="Energy at A: GPE 100%, kinetic 0%, heat and sound 0%">
-                <div class="bar bar-gpe" style="--value: 100%"><span>GPE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-ke" style="--value: 0%"><span>KE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-heat" style="--value: 0%"><span>Heat &amp; sound</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-              </div>
+              <dl class="point-speed">
+                <div><dt>Speed</dt><dd>0 m/s</dd></div>
+              </dl>
             </li>
             <li class="point">
               <div class="point-head">
@@ -344,23 +342,19 @@
                 <h4>The big drop</h4>
               </div>
               <p>Falling down the tower, GPE turns into KE and the marble speeds up fast.</p>
-              <div class="bars" role="img" aria-label="Energy at B: GPE 65%, kinetic 32%, heat and sound 3%">
-                <div class="bar bar-gpe" style="--value: 65%"><span>GPE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-ke" style="--value: 32%"><span>KE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-heat" style="--value: 3%"><span>Heat &amp; sound</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-              </div>
+              <dl class="point-speed">
+                <div><dt>Speed</dt><dd class="is-missing">Not caught on camera</dd></div>
+              </dl>
             </li>
             <li class="point">
               <div class="point-head">
                 <span class="point-tag">C</span>
                 <h4>Bottom of the drop</h4>
               </div>
-              <p>The fastest point on the track. The marble needs all this speed to make it round the loop.</p>
-              <div class="bars" role="img" aria-label="Energy at C: GPE 32%, kinetic 60%, heat and sound 8%">
-                <div class="bar bar-gpe" style="--value: 32%"><span>GPE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-ke" style="--value: 60%"><span>KE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-heat" style="--value: 8%"><span>Heat &amp; sound</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-              </div>
+              <p>The marble reaches the loop with lots of KE. It needs this speed to make it all the way round.</p>
+              <dl class="point-speed">
+                <div><dt>Speed</dt><dd class="is-missing">Not caught on camera</dd></div>
+              </dl>
             </li>
             <li class="point">
               <div class="point-head">
@@ -368,74 +362,64 @@
                 <h4>Top of the loop</h4>
               </div>
               <p>Climbing the loop turns KE back into GPE, so the marble slows right down. It must still be moving to stay on the track.</p>
-              <div class="bars" role="img" aria-label="Energy at D: GPE 66%, kinetic 20%, heat and sound 14%">
-                <div class="bar bar-gpe" style="--value: 66%"><span>GPE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-ke" style="--value: 20%"><span>KE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-heat" style="--value: 14%"><span>Heat &amp; sound</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-              </div>
+              <dl class="point-speed">
+                <div><dt>Speed</dt><dd class="is-missing">Not caught on camera</dd></div>
+              </dl>
             </li>
             <li class="point">
               <div class="point-head">
                 <span class="point-tag">E</span>
                 <h4>Shallow path</h4>
               </div>
-              <p>A gentle downhill slope. The loop took a big share of the energy, so the marble speeds up again slowly.</p>
-              <div class="bars" role="img" aria-label="Energy at E: GPE 28%, kinetic 42%, heat and sound 30%">
-                <div class="bar bar-gpe" style="--value: 28%"><span>GPE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-ke" style="--value: 42%"><span>KE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-heat" style="--value: 30%"><span>Heat &amp; sound</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-              </div>
+              <p>A gentle downhill slope with a sharp corner. The marble speeds up on the straight, loses most of its speed hitting the corner, then speeds up again.</p>
+              <dl class="point-speed">
+                <div><dt>Along the straight</dt><dd>0.3 → 0.8 m/s</dd></div>
+                <div><dt>After the corner</dt><dd>0.3 → 0.7 m/s</dd></div>
+              </dl>
             </li>
             <li class="point">
               <div class="point-head">
                 <span class="point-tag">F</span>
                 <h4>Steep drop</h4>
               </div>
-              <p>The last big drop turns most of the remaining GPE into KE.</p>
-              <div class="bars" role="img" aria-label="Energy at F: GPE 3%, kinetic 55%, heat and sound 42%">
-                <div class="bar bar-gpe" style="--value: 3%"><span>GPE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-ke" style="--value: 55%"><span>KE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-heat" style="--value: 42%"><span>Heat &amp; sound</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-              </div>
+              <p>The last big drop turns most of the remaining GPE into KE. This is the fastest speed we measured.</p>
+              <dl class="point-speed">
+                <div><dt>Speed</dt><dd>0.6 → 1.1 m/s</dd></div>
+              </dl>
             </li>
             <li class="point">
               <div class="point-head">
                 <span class="point-tag">G</span>
                 <h4>Kick upwards</h4>
               </div>
-              <p>The track curves up and launches the marble into the disc. Going up turns some KE back into GPE.</p>
-              <div class="bars" role="img" aria-label="Energy at G: GPE 15%, kinetic 42%, heat and sound 43%">
-                <div class="bar bar-gpe" style="--value: 15%"><span>GPE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-ke" style="--value: 42%"><span>KE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-heat" style="--value: 43%"><span>Heat &amp; sound</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-              </div>
+              <p>The track curves up and launches the marble onto the disc. Going up turns some KE back into GPE, so it slows down.</p>
+              <dl class="point-speed">
+                <div><dt>Speed</dt><dd>0.8 → 0.7 m/s</dd></div>
+              </dl>
             </li>
             <li class="point">
               <div class="point-head">
                 <span class="point-tag">H</span>
                 <h4>The disc</h4>
               </div>
-              <p>The marble circles the disc. Friction slows it every lap, so it spirals in towards the middle and drops through the hole.</p>
-              <div class="bars" role="img" aria-label="Energy at H: GPE 14%, kinetic 22%, heat and sound 64%">
-                <div class="bar bar-gpe" style="--value: 14%"><span>GPE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-ke" style="--value: 22%"><span>KE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-heat" style="--value: 64%"><span>Heat &amp; sound</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-              </div>
+              <p>The marble rolls down the disc into the hole in the middle, spins around inside it, then drops through.</p>
+              <dl class="point-speed">
+                <div><dt>Rolling to the hole</dt><dd>0.4 → 0.8 m/s</dd></div>
+                <div><dt>Spinning in the hole</dt><dd>about 0.7 s</dd></div>
+              </dl>
             </li>
             <li class="point">
               <div class="point-head">
                 <span class="point-tag">I</span>
                 <h4>Finish</h4>
               </div>
-              <p>A short path carries the marble to the end, where friction turns the last of its KE into heat and sound and it stops.</p>
-              <div class="bars" role="img" aria-label="Energy at I: GPE 0%, kinetic 0%, heat and sound 100%">
-                <div class="bar bar-gpe" style="--value: 0%"><span>GPE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-ke" style="--value: 0%"><span>KE</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-                <div class="bar bar-heat" style="--value: 100%"><span>Heat &amp; sound</span><span class="bar-track"><span class="bar-fill"></span></span></div>
-              </div>
+              <p>After dropping through the hole, the marble rolls down a short path to the end. Friction turns the last of its KE into heat and sound, and it stops.</p>
+              <dl class="point-speed">
+                <div><dt>Speed</dt><dd>0.2 → 0.4 m/s</dd></div>
+              </dl>
             </li>
           </ol>
-          <p class="bars-note">Bar lengths show the idea, not measured values. The total is the same at every point: the energy only changes form.</p>
+          <p class="bars-note">Speeds were measured from our test video. See <a href="#measuring">how we measured the speed</a> below.</p>
         </div>
 
         <div class="explain-grid">
