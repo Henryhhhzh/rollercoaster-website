@@ -197,3 +197,114 @@ a {
   background: rgb(228 87 46 / 10%);
   color: var(--color-accent-dark);
 }
+
+.media {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  background: repeating-linear-gradient(-45deg, #ece6db 0 12px, #f2ede4 12px 24px);
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 0 var(--color-accent-dark);
+  transition: transform var(--duration-fast) var(--ease-out), box-shadow var(--duration-fast) var(--ease-out);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 var(--color-accent-dark);
+}
+
+.button:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 var(--color-accent-dark);
+}
+
+.accent {
+  color: var(--color-accent);
+}
+
+.hero {
+  padding-block: clamp(3rem, 2rem + 4vw, 6rem) var(--space-section);
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: center;
+  gap: clamp(2rem, 1rem + 4vw, 5rem);
+}
+
+.hero h1 {
+  font-size: var(--text-hero);
+  margin-bottom: 1.25rem;
+}
+
+.hero .lead {
+  max-width: 34rem;
+  margin-bottom: 2rem;
+}
+
+.hero-media {
+  margin: 0;
+  position: relative;
+}
+
+.hero-media::before {
+  content: "";
+  position: absolute;
+  inset: 1.25rem -1.25rem -1.25rem 1.25rem;
+  border-radius: var(--radius-lg);
+  background: var(--color-navy);
+  z-index: -1;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: clamp(3rem, 2rem + 3vw, 5rem) 0 0;
+  border-top: 2px solid var(--color-ink);
+}
+
+.stat {
+  padding: 1.25rem 1.25rem 0 0;
+}
+
+.stat + .stat {
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--color-line);
+}
+
+.stat dt {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.stat dd {
+  margin: 0;
+}
+
+.stat-value {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.stat-note {
+  font-size: var(--text-sm);
+  color: var(--color-success);
+}
