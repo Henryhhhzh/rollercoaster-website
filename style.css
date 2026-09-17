@@ -401,3 +401,24 @@ figcaption {
   font-size: 1.35rem;
   margin: 0.35rem 0 0.75rem;
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.gallery-feature {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery-feature .media {
+  aspect-ratio: auto;
+  height: calc(100% - 3.5rem);
+  min-height: 16rem;
+}
+
+.gallery figcaption strong {
+  color: var(--color-ink);
+}
