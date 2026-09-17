@@ -533,3 +533,73 @@ tbody tr:last-child td {
 .results-block p {
   opacity: 0.85;
 }
+
+.concepts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.concept {
+  --concept-color: var(--color-ink);
+  padding: 1.75rem;
+  border-top: 5px solid var(--concept-color);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+}
+
+.concept-gpe {
+  --concept-color: var(--color-gpe);
+}
+
+.concept-ke {
+  --concept-color: var(--color-ke);
+}
+
+.concept-friction {
+  --concept-color: var(--color-friction);
+}
+
+.concept h3 {
+  font-size: 1.35rem;
+  color: var(--concept-color);
+}
+
+.concept-def {
+  margin: 0.5rem 0 1.25rem;
+  font-weight: 500;
+}
+
+.formula {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.formula var {
+  font-style: italic;
+}
+
+.formula-key {
+  margin: 0.4rem 0 1.5rem;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.concept h4 {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.concept p:last-child {
+  margin-bottom: 0;
+}
