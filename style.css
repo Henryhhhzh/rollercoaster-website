@@ -806,3 +806,35 @@ tbody tr:last-child td {
 .explain p:last-child {
   margin-bottom: 0;
 }
+
+.deeper {
+  margin-top: clamp(3rem, 2rem + 3vw, 4.5rem);
+  padding: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+  border-radius: var(--radius-lg);
+  background: var(--color-navy);
+  color: #fff;
+}
+
+.deeper h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.deeper-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem 2rem;
+  margin: 0;
+}
+
+.deeper-list dt {
+  margin-bottom: 0.4rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: #ffb49c;
+}
+
+.deeper-list dd {
+  margin: 0;
+  opacity: 0.88;
+}
