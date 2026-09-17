@@ -838,3 +838,82 @@ tbody tr:last-child td {
   margin: 0;
   opacity: 0.88;
 }
+
+.eval-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.eval {
+  --eval-color: var(--color-ink);
+  padding: 1.75rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.eval-good {
+  --eval-color: var(--color-success);
+}
+
+.eval-bad {
+  --eval-color: var(--color-accent-dark);
+}
+
+.eval-next {
+  --eval-color: var(--color-gpe);
+}
+
+.eval h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.eval h3::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: var(--eval-color);
+}
+
+.eval ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.eval li + li {
+  margin-top: 0.6rem;
+}
+
+.real-world {
+  margin-top: clamp(3rem, 2rem + 3vw, 4.5rem);
+  padding-top: 2rem;
+  border-top: 2px solid var(--color-ink);
+}
+
+.real-world h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.real-world-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem 2.5rem;
+}
+
+.real-world h4 {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--color-accent-dark);
+}
+
+.real-world p {
+  margin: 0;
+}
