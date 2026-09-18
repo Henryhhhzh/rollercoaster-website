@@ -1064,3 +1064,35 @@ tbody tr:last-child td {
     grid-template-columns: 1fr;
   }
 }
+
+.repeat-runs {
+  margin-top: clamp(3rem, 2rem + 3vw, 4.5rem);
+}
+
+.repeat-runs h3 {
+  font-size: 1.75rem;
+}
+
+.repeat-intro {
+  max-width: 46rem;
+  margin: 0.5rem 0 1.5rem;
+  color: var(--color-muted);
+}
+
+.video-wide {
+  aspect-ratio: 854 / 480;
+}
+
+.run-notes {
+  display: grid;
+  gap: 0.6rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  max-width: 46rem;
+}
+
+.run-notes li {
+  padding-left: 1.1rem;
+  border-left: 3px solid var(--color-accent);
+}
