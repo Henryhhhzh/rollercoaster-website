@@ -10,7 +10,7 @@ Name
 The Long Drop, named after the first drop. The marble starts 152 cm above the base and everything it does after that comes out of that one drop.
 
 Logo
-Drawn in VectorPea as a vector so it can be scaled up without pixelating.
+Drawn in VectorPea as a vector so it can be scaled up without pixelating. A navy circle with an orange track line running through it and a navy marble sitting on top of the first hill.
 
 Run time 5.3 s target: at least 3 s
 Loops 1 target: at least 1
