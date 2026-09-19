@@ -1078,3 +1078,10 @@ tbody tr:last-child td {
 .why-chosen p:last-child {
   margin-bottom: 0;
 }
+
+.caption-note {
+  display: block;
+  margin-top: 0.35rem;
+  font-style: italic;
+  opacity: 0.85;
+}
